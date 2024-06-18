@@ -15,6 +15,39 @@ export const Container = styled.header`
     align-items: center;
 
     padding: 0 120px;
+
+    > section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+
+        > div {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        line-height: normal;
+        text-align: end;
+
+        span {
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: 'Roboto Slab';
+        }
+
+        button {
+            font-family: 'Roboto Slab';
+            font-size: 14px;
+            font-weight: 400;
+            background: none;
+            border: none;
+            color: ${({ theme }) => theme.COLORS.WHITE_TXT};
+            text-align: end;
+            margin-top: 3px;
+        }
+    }
+}
 `;
 
 export const Profile = styled(Link)`
@@ -26,26 +59,7 @@ export const Profile = styled(Link)`
         height: 64px;
         border-radius: 50%;
     }
-
-    > div {
-        display: flex;
-        flex-direction: column;
-        margin-right: 16px;
-        line-height: normal;
-        text-align: end;
-
-        span {
-            color: white;
-            font-size: 14px;
-            font-weight: 700;
-            font-family: 'Roboto Slab';
-        }
-
-        p {
-            font-size: 14px;
-            font-weight: 400;
-        }
-    }
+    
 `;
 
 export const Search = styled.div`

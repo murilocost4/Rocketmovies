@@ -1,8 +1,8 @@
 import { Container } from './styles';
 
-export function Tag({ title, isGray, ...rest }) {
+export function Tag({ isgray, title, ...rest }) {
     return(
-        <Container isgray={isGray} {...rest}>
+        <Container isgray={isgray} {...rest}>
             {title}
 
         </Container>

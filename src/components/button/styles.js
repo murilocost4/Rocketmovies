@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.button`
     width: 100%;
-    background-color: ${({ theme, isBlack }) => isBlack ? theme.COLORS.BACKGROUND_900 : theme.COLORS.PINK};
+    background-color: ${({ theme, isblack }) => isblack ? theme.COLORS.BACKGROUND_900 : theme.COLORS.PINK};
     color: ${({ theme, isblack }) => isblack ? theme.COLORS.PINK : theme.COLORS.BACKGROUND_800};
 
     height: 56px;

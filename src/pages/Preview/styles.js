@@ -46,5 +46,11 @@ export const Container = styled.div`
             max-width: 1113px;
             text-align: justify;
         }
+        > div {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
     }
 `;
